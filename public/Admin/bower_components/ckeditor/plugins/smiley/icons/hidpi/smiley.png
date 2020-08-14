@@ -1,0 +1,58 @@
+ce $date = null)
+    {
+        $minutes = floor($this->getOffset($date ?: Carbon::now($this)) / 60);
+
+        $hours = floor($minutes / 60);
+
+        $minutes = str_pad((string) (abs($minutes) % 60), 2, '0', STR_PAD_LEFT);
+
+        return ($hours < 0 ? '-' : '+').str_pad((string) abs($hours), 2, '0', STR_PAD_LEFT).":$minutes";
+    }
+
+    /**
+     * Returns a new CarbonTimeZone object using the offset string instead of region string.
+     *
+     * @param DateTimeInterface|null $date
+     *
+     * @return CarbonTimeZone
+     */
+    public function toOffsetTimeZone(DateTimeInterface $date = null)
+    {
+        return new static($this->toOffsetName($date));
+    }
+
+    /**
+     * Returns the first region string (such as "America/Toronto") that matches the current timezone.
+     *
+     * @see timezone_name_from_abbr native PHP function.
+     *
+     * @param DateTimeInterface|null $date
+     * @param int                    $isDst
+     *
+     * @return string
+     */
+    public function toRegionName(DateTimeInterface $date = null, $isDst = 1)
+    {
+        $name = $this->getName();
+        $firstChar = substr($name, 0, 1);
+
+        if ($firstChar !== '+' && $firstChar !== '-') {
+            return $name;
+        }
+
+        // Integer construction no longer supported since PHP 8
+        // @codeCoverageIgnoreStart
+        try {
+            $offset = @$this->getOffset($date ?: Carbon::now($this)) ?: 0;
+        } catch (\Throwable $e) {
+            $offset = 0;
+        }
+        // @codeCoverageIgnoreEnd
+
+        return @timezone_name_from_abbr('', $offset, $isDst);
+    }
+
+    /**
+     * Returns a new CarbonTimeZone object using the region string instead of offset string.
+     *
+     * @par

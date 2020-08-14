@@ -1,0 +1,38 @@
+   }
+
+    /**
+     * @deprecated To avoid conflict between different third-party libraries, static setters should not be used.
+     *             You should rather use the ->settings() method.
+     *             Or you can use method variants: addYearsWithOverflow/addYearsNoOverflow, same variants
+     *             are available for quarters, years, decade, centuries, millennia (singular and plural forms).
+     * @see settings
+     *
+     * Reset the month overflow behavior.
+     *
+     * @return void
+     */
+    public static function resetYearsOverflow()
+    {
+        static::$yearsOverflow = true;
+    }
+
+    /**
+     * Get the month overflow global behavior (can be overridden in specific instances).
+     *
+     * @return bool
+     */
+    public static function shouldOverflowYears()
+    {
+        return static::$yearsOverflow;
+    }
+
+    /**
+     * Set specific options.
+     *  - strictMode: true|false|null
+     *  - monthOverflow: true|false|null
+     *  - yearOverflow: true|false|null
+     *  - humanDiffOptions: int|null
+     *  - toStringFormat: string|Closure|null
+     *  - toJsonFormat: string|Closure|null
+     *  - locale: string|null
+     *  - timezone: \DateTimeZone|string

@@ -1,0 +1,1 @@
+<p>Để lấy lại mật khẩu vui lòng nhấn vào link sau đây: <a href="{{$url}}">Click</a></p>

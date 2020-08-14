@@ -1,0 +1,29 @@
+ters),
+                ...array_fill(0, max(0, $count - count($parameters)), null)
+            );
+        }
+
+        return parent::trans($id, $parameters, $domain, $locale);
+    }
+
+    /**
+     * Reset messages of a locale (all locale if no locale passed).
+     * Remove custom messages and reload initial messages from matching
+     * file in Lang directory.
+     *
+     * @param string|null $locale
+     *
+     * @return bool
+     */
+    public function resetMessages($locale = null)
+    {
+        if ($locale === null) {
+            $this->messages = [];
+
+            return true;
+        }
+
+        foreach ($this->getDirectories() as $directory) {
+            $directory = rtrim($directory, '\\/');
+            if (file_exists($filename = "$directory/$locale.php")) {
+                $this

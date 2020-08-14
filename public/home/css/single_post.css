@@ -1,0 +1,354 @@
+.space{
+	height: 200px
+}
+
+.single-blog-main{
+	padding-top: 50px;
+}
+
+.single-blog-main .search form .form-group{
+	position: relative;
+	width: 100%;
+}
+
+.single-blog-main .search form .form-group input{
+	width: 100%;
+}
+
+.single-blog-main .search form .form-group .btn{
+	position: absolute;
+	right: 0px;
+	background: none;
+	border: none;
+}
+
+.single-blog-main .search{
+	border-bottom: 1px solid #adadad;
+	padding-bottom: 40px;
+}
+
+.blog .single-blog-main .follow{
+	padding: 30px 0px;
+	border-bottom: 1px solid #adadad;
+}
+
+.single-blog-main .follow .icon .social{
+	padding-top: 15px;
+}
+
+.single-blog-main .follow .icon .social li{
+	display: inline-block;
+}
+
+.single-blog-main .follow .icon .social [class*="fa fa-"] {
+	border: 1px solid #f0f0f0;
+	border-radius: 30px;
+	color: black;
+	height: 30px;
+	line-height: 30px;
+	width: 30px;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.single-blog-main .follow .icon .social [class*="fa fa-"]:hover {
+	background: #f26460;
+	color: white;
+}
+
+.single-blog-main .list-category{
+	padding: 30px 0px;
+	border-bottom: 1px solid #adadad;
+}
+
+.single-blog-main .list-category .category{
+	padding-top: 15px;
+}
+
+.single-blog-main .list-category .category .category-group{
+	display: block;
+	color: #888888;
+	cursor: pointer;
+	padding-bottom: 5px;
+}
+
+.single-blog-main .list-category .category .category-group:hover .left{
+	color: black
+}
+
+.single-blog-main .list-category .category .category-group:hover .right{
+	color: #f26460
+}
+
+.single-blog-main .popular{
+	padding: 25px 0px;
+	border-bottom: 1px solid #adadad;
+}
+
+.single-blog-main .popular .popular-posts .post{
+	display: block;
+	overflow: hidden;
+	color: black;
+	text-decoration: none;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.single-blog-main .popular .popular-posts .post .image{
+	overflow: hidden;
+	padding-right: 0px;
+}
+.single-blog-main .popular .popular-posts .post:hover img{
+	transform: scale(1.1);
+	transition: 1s
+}
+
+.single-blog-main .popular .popular-posts .post p{
+	color:#888888
+}
+
+
+.single-blog-main .letter{
+	padding-top: 30px
+}
+.single-blog-main .letter .content .email{
+	padding: 7px;
+	width: 100%
+}
+.single-blog-main .letter .content{
+	color: #888888
+}
+
+.single-blog-main .letter .content form .form-group span{
+	color: black
+}
+
+.single-blog-main .letter .content form .form-group .checkbox{
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.single-blog-main .letter .content form .btn{
+	background: black;
+	padding: 7px 13px;
+}
+
+
+.single-blog-main .base{
+	position: relative;
+	padding-left: 0;
+}
+
+.single-blog-main .tip{
+	position: absolute;
+	top: -100px;
+	/* z-index: 1; */
+	background: white;
+	padding-left: 50px;
+	padding-right: 30px;
+	padding-top: 50px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.single-blog-main .tip-content{
+	overflow: hidden
+}
+
+.single-blog-main .tip-content a{
+	text-decoration: none;
+	color: #777777
+}
+
+.single-blog-main .tip .feb{
+	background: white;
+	width: 100%
+}
+.single-blog-main .tip .feb .feb-left{
+	padding: 2px;
+	background: black;
+	color: white
+}
+
+.single-blog-main .tip .feb .feb-rigth{
+	color: black;
+	padding-left: 50px;
+}
+.single-blog-main .tip .feb .feb-rigth .by{
+	color: #cdcdcd
+}
+
+.single-blog-main .tip .tip-content .link{
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding-bottom: 30px
+}
+
+.single-blog-main .tip .tip-content .link p{
+	color: #777777;
+}
+
+.single-blog-main .tip .tip-content .link .feb-left{
+	background: #f26460;
+}
+
+.single-blog-main .tip .tip-content .link a{
+	color: #f26460;
+}
+
+.single-blog-main .tip .tip-text{
+	padding-top: 20px;
+}
+
+.single-blog-main .tip .tip-text img{
+	padding-bottom: 40px
+}
+
+.single-blog-main .tip .tip-text p{
+	padding-bottom: 30px
+}
+
+.single-blog-main .tip .tip-text .quote{
+	border: 1px solid #f26460;
+	padding: 20px 30px;
+	margin-bottom: 40px
+}
+
+.single-blog-main .tip .tip-text .quote .fa{
+	padding-right: 15px;
+	color: #f26460
+}
+
+.single-blog-main .tip .tip-text .quote .author{
+	color: #cdcdcd
+}
+
+.single-blog-main .tip .tags a{
+	text-decoration: none;
+	color: black
+}
+
+.single-blog-main .tip .tags .tag{
+	display: inline-block;
+	padding: 5px 10px;
+	text-align: center;
+	background: #f5f5f5;
+	margin-left: 10px
+}
+
+.single-blog-main .tip .tags .fa{
+	display: inline-block;
+	padding: 5px 15px;
+	text-align: center;
+}
+
+.single-blog-main .tip .tags .fa-facebook{
+	color: #2463ac
+}
+.single-blog-main .tip .tags .fa-twitter{
+	color: #00c4fc
+}
+.single-blog-main .tip .tags .fa-instagram{
+	color: #e25dca
+}
+.single-blog-main .tip .tags .fa-youtube-play{
+	color: #ff081c
+}
+
+
+.single-blog-main .tip .link-post{
+	background: #f7f5f4;
+	padding: 10px 20px;
+	margin-top: 50px;
+	width: 100%;
+}
+.single-blog-main .tip .link-post a{
+	text-decoration: none;
+	color: black;
+}
+
+.single-blog-main .tip .rating_comment{
+	overflow: hidden;
+	width: 100%;
+}
+.single-blog-main .tip .rating_comment .new_comment{
+	width: 100%;
+	overflow: hidden;
+	padding: 30px 0px;
+}
+
+.single-blog-main .tip .rating_comment .avatar{
+	padding-right: 0px;
+}
+.single-blog-main .tip .rating_comment .avatar img{
+	border-radius: 50%;
+}
+
+.single-blog-main .tip .rating_comment .new_comment{
+	margin-bottom: 50px;
+}
+.single-blog-main .tip .rating_comment .old_comment {
+	margin-bottom: 40px;
+}
+
+
+.send_comment{
+	display: block;
+	padding: 10px 5px;
+	background: black;
+	color: white;
+	margin: 0 auto;
+	width: 100px;
+	border: none;
+}
+
+.send_comment:hover{
+	background: #f26460;
+	color: white;
+}
+
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-radius: 30px;
+ }
+
+.pagination>li>a, .pagination>li>span {
+    margin-right: 9px;
+    color: black;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+}
+
+.pagination>li>a:hover{
+	color: white;
+    background: black;
+}
+
+.pagination .back{
+	display: none;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: black;
+	border-color: black;
+}
+
+@media only screen and (max-width: 425px){
+	.single-blog-main .left{
+		display: none!important;
+	}
+	.single-blog-main .tip{
+		position: relative;
+		padding: 0px;
+		top: 0px;
+	}
+	.space {
+		height: 15px;
+	}
+}
+

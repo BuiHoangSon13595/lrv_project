@@ -1,0 +1,298 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img{
+	vertical-align: middle;
+	width: 100%;
+}
+.clear{
+	clear: both;
+}
+.space{
+	height: 20px;
+}
+
+header{
+	background: #111111;
+}
+
+header .login-user {
+	background: white;
+}
+
+header .login-user a{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	font-weight: bold;
+}
+
+header .login-user a:hover{
+	color: red;
+}
+
+header .login-user .symbol a{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-right: 10px;
+}
+
+header .login-user .login a{
+	padding: 7px 0px 7px;
+}
+
+header .menu .logo{
+	width: 50%;
+	margin: 5px;
+	padding-top: 5px;
+}
+
+header  .navbar-default .navbar-nav>.open>a:focus{
+	color: white;
+	background-color: transparent;
+}
+
+header .menu a{
+	color: white;
+}
+
+header .menu a:hover{
+	color: #dd163b;
+}
+header .dropdown-menu>li>a{
+	color: white;
+}
+
+header .dropdown-menu a:hover {
+	color: #dd163b;
+	background-color: transparent;
+}
+
+header .hide:hover li a{
+	background: none;
+}
+
+header .icon:hover li a{
+	background: none;
+}
+header .icon li a:hover i{
+	color: #dd163b;
+}
+header .icon span{
+	margin-left: 10px;
+}
+
+
+
+@media only screen and (min-width: 320px){
+	header .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+		background-color: transparent !important;
+		border-color: transparent;
+	}
+	header .dropdown:hover .dropdown-menu >li >a:hover{
+		color: #dd163b;
+	}
+	header .show:hover li a{
+		background: none;
+	}
+	header .icon:hover li a{
+		background: none;
+	}
+	header .icon{
+		text-align: center;
+	}
+	header .icon li{
+		display: inline-block;
+	}
+	header .menu-left{
+		text-align: center;
+	}
+	header .menu-left ul li{
+		text-align: center;
+	}
+	header .menu .logo{
+		width: 50%;
+		margin: 5px auto;
+	}
+
+	footer .up .logo{
+		margin: 11px auto
+	}
+
+	footer .mid .fix{
+		clear: both;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	header .show{
+		display:  none!important;
+	}
+	header .menu .logo{
+		width: 20%;
+		margin-top: 5px;
+	}
+	header .hide{
+		display: block!important;
+	}
+	header .dropdown:hover .dropdown-menu {
+		display: block;
+	}
+	footer .mid .fix{
+		clear: none;
+	}
+
+}
+
+
+@media only screen and (min-width: 992px) {
+	header .menu .logo{
+		width: 40%;
+		margin-top: 11px;
+	}
+	header .menu .logo{
+		margin: 5px;
+	}
+
+	footer .up .logo{
+		margin: 11px 
+	}
+	footer .mid .fix{
+		clear: none;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	header .hide{
+		padding-top: 0px;
+	}
+	header .icon{
+		padding-top: 0px;
+	}
+	footer .mid .fix{
+		clear: none;
+	}
+}
+
+/* .fa-heart-o{
+	position: relative;
+}
+.number_cart{
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	line-height:34px;
+	font-size: 17px;
+	text-align: center;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+}
+
+.number_cart  span
+{
+	text-align: center;
+	color: pink;
+} */
+
+footer{
+	font-family: "open sans";
+	margin-top: 3%;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+footer p a:hover{
+	color: red;
+}
+
+footer .up .data{
+	padding : 0px;
+	overflow: hidden;
+}
+
+footer .up .btn{
+	background: black;
+	color: white;
+}
+footer .up .text{
+	color:  #4a4a4a;
+}
+
+footer .up .social li{
+	display: inline-block;
+}
+
+footer .up .social [class*="fa fa-"] {
+	border: 1px solid #f0f0f0;
+	border-radius: 30px;
+	color: black;
+	height: 30px;
+	line-height: 30px;
+	width: 30px;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+}
+footer .up .social [class*="fa fa-"]:hover{
+	background: #f26460;
+	color: white;
+}
+footer .up .logo{
+	width:25%;
+	margin: 11px;
+}
+footer .up{
+	padding: 15px 0px;
+	border-bottom: 1px solid #e1e1e1;
+	overflow: hidden
+}
+
+footer .up .form-contact{
+	padding-top: 2%
+}
+footer .up .icon{
+	padding-top: 4%
+}
+
+footer .mid a{
+	text-decoration: none;
+	color: #adadad
+}
+footer .mid{
+	overflow: hidden
+}
+footer .mid .brands a{
+	display: inline-block;
+	padding-right: 5px
+}
+
+footer .mid p{
+	color: #adadad
+}
+
+footer .mid .link-contact{
+	color: black;
+}
+footer .mid .link-contact:hover{
+	color: red;
+}
+
+footer .down{
+	background: #f7f5f4;
+	color: #adadad
+}
+
+footer .down a{
+	text-decoration: none;
+	display: inline-block;
+	color: #adadad
+}
+
+footer .privacy{
+	padding-top: 7px
+}

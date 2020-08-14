@@ -1,0 +1,38 @@
+licy = (vim.host.NetworkPolicy) null, 
+-->             mtu = <unset>
+-->          }
+-->       }, 
+-->       (vim.host.VirtualSwitch) {
+-->          name = "vmnet4", 
+-->          key = "vim.host.VirtualSwitch-vmnet4", 
+-->          numPorts = 32, 
+-->          numPortsAvailable = 32, 
+-->          mtu = <unset>, 
+-->          portgroup = <unset>, 
+-->          pnic = <unset>, 
+-->          spec = (vim.host.VirtualSwitch.Specification) {
+-->             numPorts = 32, 
+-->             bridge = (vim.host.VirtualSwitch.Bridge) null, 
+-->             policy = (vim.host.NetworkPolicy) null, 
+-->             mtu = <unset>
+-->          }
+-->       }, 
+-->       (vim.host.VirtualSwitch) {
+-->          name = "vmnet5", 
+-->          key = "vim.host.VirtualSwitch-vmnet5", 
+-->          numPorts = 32, 
+-->          numPortsAvailable = 32, 
+-->          mtu = <unset>, 
+-->          portgroup = <unset>, 
+-->          pnic = <unset>, 
+-->          spec = (vim.host.VirtualSwitch.Specification) {
+-->             numPorts = 32, 
+-->             bridge = (vim.host.VirtualSwitch.Bridge) null, 
+-->             policy = (vim.host.NetworkPolicy) null, 
+-->             mtu = <unset>
+-->          }
+-->       }, 
+-->       (vim.host.VirtualSwitch) {
+-->          name = "vmnet6", 
+-->          key = "vim.host.VirtualSwitch-vmnet6", 
+-->          

@@ -1,0 +1,119 @@
+/*-------------------
+--CSS Shopping cart--
+-------------------*/
+
+.shopping_cart .top{
+	background-image:url('../image/top-banner.png');
+	background-size: cover;
+	overflow: hidden;
+	margin-bottom: 20px; 
+}
+.shopping_cart .top h1{
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+.shopping_cart .top .title{
+	padding-bottom: 25px;
+}
+.shopping_cart .top .title a{
+	text-decoration: none;
+	color: #000;
+}
+.shopping_cart .top .title .active{
+	color: red;
+}
+.shopping_cart .content .update{
+	color: #000;
+	background-color: #eee;
+	border: none;
+}
+.shopping_cart .content .buttons_added{
+	opacity:1;
+	display:inline-flex;
+	white-space:nowrap;
+	vertical-align:top;
+	margin: 20px 0;
+	position: relative;
+}
+.shopping_cart .content .buttons_added .is-form:focus,.input-text:focus {
+    outline:none;
+}
+.shopping_cart .content .buttons_added .is-form.minus {
+	background: pink;
+	border: none;
+	border-radius:23px 0 0 23px;
+	padding: 0 20px;
+}
+.shopping_cart .content .buttons_added .is-form.plus {
+	background: pink;
+	border: none;
+	border-radius:0 23px 23px 0;
+	padding: 0 20px;
+}
+.shopping_cart .content .buttons_added .input-qty {
+    background-color:#fff;
+	width: 60px;
+    text-align:center;
+    font-size:1rem;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    border-left:0;
+    border-right:0;
+	padding:0;
+	font-size: 25px;
+}
+.shopping_cart .content .common{
+    text-align:center;
+    vertical-align:top;
+	font-size: 25px;
+	padding: 0;
+	opacity:1;
+	padding-top: 25px;
+}
+.shopping_cart .content .buttons_added .input-qty::-webkit-outer-spin-button,.input-qty::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+}
+.shopping_cart .content .btn-a{
+	color: #000;
+	border: none;
+}
+.shopping_cart .content .btn-a:hover{
+	text-decoration: none;
+}
+.shopping_cart .content .btn-a [class*="fa fa-"]{
+	color: pink;
+	margin-right: 5px;
+}
+.shopping_cart .bot .content{
+	overflow: hidden;
+}
+.shopping_cart .bot .content p{
+	margin: 0;
+}
+.shopping_cart .bot .subtotal{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.shopping_cart .bot .total{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.shopping_cart .bot .checkout button{
+	width: 100%;
+	color: #fff;
+	background-color: #000;
+	padding: 10px;
+}
+
+.but{
+	background: pink;
+	border: none;
+}
+
+.but:hover{
+	background: black;
+}

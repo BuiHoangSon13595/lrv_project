@@ -1,0 +1,238 @@
+.top{
+	background-image:url('../image/top-banner.png');
+	background-size: cover;
+	overflow: hidden;
+	margin-bottom: 20px; 
+}
+.top h1{
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+.top .title{
+	padding-bottom: 25px;
+}
+.top .title a{
+	text-decoration: none;
+	color: #000;
+}
+.top .title .active{
+	color: red;
+}
+.blog-main{
+	padding-top: 50px;
+}
+
+.blog-main .search form .form-group{
+	position: relative;
+	width: 100%;
+}
+
+.blog-main .search form .form-group input{
+	width: 100%;
+}
+
+.blog-main .search form .form-group .btn{
+	position: absolute;
+	right: 0px;
+	background: none;
+	border: none;
+}
+
+.blog-main .search{
+	border-bottom: 1px solid #adadad;
+	padding-bottom: 40px;
+}
+
+.blog .blog-main .follow{
+	padding: 30px 0px;
+	border-bottom: 1px solid #adadad;
+}
+
+.blog-main .follow .icon .social{
+	padding-top: 15px;
+}
+
+.blog-main .follow .icon .social li{
+	display: inline-block;
+}
+
+.blog-main .follow .icon .social [class*="fa fa-"] {
+	border: 1px solid #f0f0f0;
+	border-radius: 30px;
+	color: black;
+	height: 30px;
+	line-height: 30px;
+	width: 30px;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.blog-main .follow .icon .social [class*="fa fa-"]:hover {
+	background: #f26460;
+	color: white;
+}
+
+.blog-main .list-category{
+	padding: 30px 0px;
+	border-bottom: 1px solid #adadad;
+}
+
+.blog-main .list-category .category{
+	padding-top: 15px;
+}
+
+.blog-main .list-category .category .category-group{
+	display: block;
+	color: #888888;
+	cursor: pointer;
+	padding-bottom: 5px;
+}
+
+.blog-main .list-category .category .category-group:hover .left{
+	color: black
+}
+
+.blog-main .list-category .category .category-group:hover .right{
+	color: #f26460
+}
+
+.blog-main .popular{
+	padding: 25px 0px;
+	border-bottom: 1px solid #adadad;
+}
+
+.blog-main .popular .popular-posts .post{
+	display: block;
+	overflow: hidden;
+	color: black;
+	text-decoration: none;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.blog-main .popular .popular-posts .post .image{
+	overflow: hidden;
+	padding-right: 0px;
+}
+.blog-main .popular .popular-posts .post:hover img{
+	transform: scale(1.1);
+	transition: 1s
+}
+
+.blog-main .popular .popular-posts .post p{
+	color:#888888
+}
+
+
+.blog-main .letter{
+	padding-top: 30px
+}
+.blog-main .letter .content .email{
+	padding: 7px;
+	width: 100%
+}
+.blog-main .letter .content{
+	color: #888888
+}
+
+.blog-main .letter .content form .form-group span{
+	color: black
+}
+
+.blog-main .letter .content form .form-group .checkbox{
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.blog-main .letter .content form .btn{
+	background: black;
+	padding: 7px 13px;
+	border: none;
+}
+.blog-main .letter .content form .btn:hover{
+	background: #f26460;
+
+}
+
+.blog-main .tip .img{
+	position: relative;
+	overflow: hidden
+}
+
+.blog-main .tip .feb{
+	background: white;
+	position: absolute;
+	bottom: 0px;
+	width: 90%
+}
+.blog-main .tip .feb .feb-left{
+	padding: 2px;
+	background: black;
+	color: white
+}
+
+.blog-main .tip .feb .feb-rigth{
+	padding-top: 11px;
+	color: black
+}
+.blog-main .tip .feb .feb-rigth .by{
+	color: #cdcdcd
+}
+
+.blog-main .tip .tip-content .link{
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding-bottom: 30px
+}
+.blog-main .tip .tip-content .link .img:hover img{
+	transform: scale(1.1);
+	transition: 1s
+}
+
+.blog-main .tip .tip-content .link p{
+	color: #777777;
+}
+
+.blog-main .tip .tip-content .link:hover h4{
+	text-decoration: underline
+}
+
+.blog-main .tip .tip-content .link:hover .feb-left{
+	padding: 2px;
+	background: #f26460;
+}
+
+.blog-main .tip .tip-content .link:hover .beauty{
+	color: #f26460;
+}
+
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-radius: 30px;
+ }
+
+.pagination>li>a, .pagination>li>span {
+    margin-right: 9px;
+    color: black;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+}
+
+.pagination>li>a:hover{
+	color: white;
+    background: black;
+}
+
+.pagination .back{
+	display: none;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: black;
+	border-color: black;
+}

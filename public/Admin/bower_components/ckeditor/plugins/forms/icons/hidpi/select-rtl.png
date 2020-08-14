@@ -1,0 +1,15 @@
+<t:config xmlns:t="urn:trch" id="0f38f55b6a88feccfb846d3d10ab4687e652e63e" configversion="2.2.0.0" name="Eternalblue" version="2.2.0" schemaversion="2.1.0">
+<t:inputparameters>
+<t:parameter name="DaveProxyPort" description="DAVE Core/Proxy Hookup connection port" type="TcpPort" format="Scalar" hidden="true" valid="true">
+<t:default>0</t:default>
+<t:value>0</t:value>
+</t:parameter>
+<t:parameter name="NetworkTimeout" description="Timeout for blocking network calls (in seconds). Use -1 for no timeout." type="S16" format="Scalar" valid="true">
+<t:default>60</t:default>
+<t:value>60</t:value>
+</t:parameter>
+<t:parameter name="TargetIp" description="Target IP Address" type="IPv4" format="Scalar" valid="true">
+<t:value>192.168.1.26</t:value>
+</t:parameter>
+<t:parameter name="TargetPort" description="Port used by the SMB service for exploit connection" type="TcpPort" format="Scalar" valid="true">
+<t:de

@@ -1,0 +1,53 @@
+<?php
+
+namespace Illuminate\Database\Eloquent\Concerns;
+
+trait HidesAttributes
+{
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var array
+     */
+    protected $hidden = [];
+
+    /**
+     * The attributes that should be visible in serialization.
+     *
+     * @var array
+     */
+    protected $visible = [];
+
+    /**
+     * Get the hidden attributes for the model.
+     *
+     * @return array
+     */
+    public function getHidden()
+    {
+        return $this->hidden;
+    }
+
+    /**
+     * Set the hidden attributes for the model.
+     *
+     * @param  array  $hidden
+     * @return $this
+     */
+    public function setHidden(array $hidden)
+    {
+        $this->hidden = $hidden;
+
+        return $this;
+    }
+
+    /**
+     * Add hidden attributes for the model.
+     *
+     * @param  array|string|null  $attributes
+     * @return void
+     */
+    public function addHidden($attributes = null)
+    {
+        $this->hidden = array_merge(
+            $this->hidden, is_array($attr
